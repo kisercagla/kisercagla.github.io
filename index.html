@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -13,45 +14,271 @@ and open the template in the editor.
         <style>
             #outer {
                position: absolute;
-               top: 15%;
-               left: 15%;
-               background-color: #999999;
-               width: 6em;
-               height: 6em;
+               top: 30%;
+               left: 20%;
+               width: 12em;
+               height: 2em;
+               
             }
             #inner{
                 position: absolute;
-                top: 20%;
+                top: 90%;
                 left: 20%;
-                text-align: justify;
-                background-color: #6699ff;
-                color: #003366;
+                text-align: center;
+                color: #000000;
                 cursor: pointer;
+                font-family: mv boli;
+                font-size: 1em ;
+                height: 4em;
             }
+            
+            #inner1 {
+                position: absolute;
+                top: 100%;
+                left: 115%;
+                text-align: center;
+                color: black;
+                cursor: pointer;
+                font-family: mv boli;
+                font-size: 1em ;
+                height: 4em;
+            }
+            #inner2 {
+                position: absolute;
+                top: 100%;
+                left: 180%;
+                text-align: center;
+                cursor: pointer;
+                color: black;
+                width: 12em;
+                height: 4em;
+                font-family: mv boli;
+                font-size: 1em ;
+            }
+            #inner3 {
+                position: absolute;
+                top: 100%;
+                left: 290%;
+                text-align: center;
+                cursor: pointer;
+                color: black;
+                width: 12em;
+                height: 4em;
+                font-family: mv boli;
+                font-size: 1em ;
+            }
+            #inner4 {
+                position: absolute;
+                top: 200px;
+                left: 60px;
+                text-align: center;
+                cursor: pointer;
+                color: black;
+                width: 8em;
+                height: 5em;
+                font-family: mv boli;
+                font-size: 1em ;
+                
+            }
+            #inner5 {
+                position: absolute;
+                top: 200px;
+                left: 220px;
+                text-align: center;
+                cursor: pointer;
+                height: 6em;
+                color: black;
+                width: 12em;
+                font-family: mv boli;
+                font-size: 1em ;
+            }
+             #inner6 {
+                position: absolute;
+                top: 200px;
+                left: 450px;
+                text-align: center;
+                cursor: pointer;
+                color: black;
+                width: 8em;
+                height: 5em;
+                font-family: mv boli;
+                font-size: 1em ;
+             }
+             #inner7 {
+                position: absolute;
+                top: 200px;
+                left: 600px;
+                text-align: center;
+                cursor: pointer;
+                color: black;
+                width: 8em;
+                height: 5em;
+                font-family: mv boli;
+                font-size: 1em ;
+             }
              
+            h1 {
+                position: absolute;
+                top: 5%;
+                left: 15%;
+                right: 15%;
+                font-family: mv boli;
+                font-size: 2em ;
+                text-align: center;
+                color: #003366;
+                
+            }
+            
+            body {
+                background-color: cadetblue;
+            }
         </style>
     </head>
     <body>
         <div id="outer">
             <span id="inner">
-                Hello
+                Turgut Uyar- Göğe Bakma Durağı 
             </span>
+            <span id="inner1" >
+                Orhan Veli- Anlatamıyorum
+            </span>
+            <span id="inner2">
+                Atilla İlhan- Ben Sana Mecburum
+            </span>
+            <span id="inner3">
+                Turgut Uyar- Vaiz Sokağı Numara 70
+            </span>
+            <span id="inner4">
+                Cemal Süreya- Üvercinka
+            </span>
+            <span id="inner5">
+                Nazım Hikmet- Ben Senden Önce Ölmek İsterim 
+            </span>
+             <span id="inner6">
+                 Ümit Yaşar Oğuzcan-Ben Seni Sevdim Mi 
+            </span>
+             <span id="inner7">
+                Atilla İlhan-Üçüncü Şahsın Şiiri 
+            </span>
+            
         </div>
         <script>
             $('#inner').hover(
                     function(){
-               $(this).css('background-color',"green");
+               $(this).css('background-color',"darkolivegreen");
             }, 
             function(){
-                $(this).css("background-color","red");
+                $(this).css("background-color","#006666");
             }
-            );
+             );
             
             $('#inner').click(
                     function() {
-                        window.location = "www.hello.de";
+                        window.location = "http://www.siir.gen.tr/siir/t/turgut_uyar/goge_bakma_duragi.htm";
+                    }
+                    );
+            
+            $('#inner1').hover(
+                    function(){
+               $(this).css('background-color',"#006666");
+            }, 
+            function(){
+                $(this).css("background-color","darkolivegreen");
+            }
+             );
+            
+            $('#inner1').click(
+                    function() {
+                        window.location = "http://www.siir.gen.tr/siir/o/orhan_veli_kanik/anlatamiyorum.htm";
+                    }
+                    );
+            
+            $('#inner2').hover(
+                    function(){
+               $(this).css('background-color',"darkolivegreen");
+            }, 
+            function(){
+                $(this).css("background-color","#006666");
+            }
+            );
+            
+            $('#inner2').click(
+                    function() {
+                        window.location = "http://www.siir.gen.tr/siir/a/attila_ilhan/ben_sana_mecburum.htm";
+                    }
+                    );
+            
+            $('#inner3').hover(
+                    function(){
+               $(this).css('background-color',"#006666");
+            }, 
+            function(){
+                $(this).css("background-color","darkolivegreen");
+            }
+             );
+            
+            $('#inner3').click(
+                    function() {
+                        window.location = "https://simgesiir.wordpress.com/2010/02/22/vaiz-sokagi-numara-70-turgut-uyar/";
+                    }
+                    );
+            $('#inner4').hover(
+                    function(){
+               $(this).css('background-color',"#006666");
+            }, 
+            function(){
+                $(this).css("background-color","darkolivegreen");
+            }
+             );
+            
+            $('#inner4').click(
+                    function() {
+                        window.location = "http://www.siir.gen.tr/siir/c/cemal_sureya/uvercinka.htm";
+                    }
+                    );
+            $('#inner5').hover(
+                    function(){
+               $(this).css('background-color',"darkolivegreen");
+            }, 
+            function(){
+                $(this).css("background-color","#006666");
+            }
+             );
+            
+            $('#inner5').click(
+                    function() {
+                        window.location = "http://siir.gen.tr/siir/n/nazim_hikmet/ben_senden_once_olmek_isterim.htm";
+                    }
+                    );
+            $('#inner6').hover(
+                    function(){
+               $(this).css('background-color',"#006666");
+            }, 
+            function(){
+                $(this).css("background-color","darkolivegreen");
+            }
+             );
+            
+            $('#inner6').click(
+                    function() {
+                        window.location = "http://www.siir.gen.tr/siir/u/umit_yasar_oguzcan/ben_seni_sevdim_mi.htm";
+                    }
+                    );
+            $('#inner7').hover(
+                    function(){
+               $(this).css('background-color',"darkolivegreen");
+            }, 
+            function(){
+                $(this).css("background-color","#006666");
+            }
+             );
+            
+            $('#inner7').click(
+                    function() {
+                        window.location = "http://www.siir.gen.tr/siir/a/attila_ilhan/ucuncu_sahsin_siiri.htm";
                     }
                     );
         </script>
+    <h1> Do you want to read some impressive, perfect Turkish poems? This is the right web page for you ! Please, have a look at couple of my favourite poems.  </h1>
     </body>
 </html>
