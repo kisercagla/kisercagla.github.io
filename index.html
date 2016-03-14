@@ -6,40 +6,45 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>factorial (n)</title>
+        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script>
-            function factorial(num) {
-                var res = 1; //the result we will return
-                for(var i=2; i<=num; i++) { //loop up to num
-                    res= res*i;// res *= i;
-                }
-                return res;
-            }
-            //var res5 = factorial(5);
-           
-            
-        </script>
     </head>
     <body>
         <div>
             <form>
-                <input type="text" id="num" value="6"/>
-                <input type="text" id="res" placeholder="Here goes the result"/>
-                <input type="button" 
-                       onmouseover="calculate( );"
-                       onclick="calculate();"
-                       />
+                <input type="text" id="inp1" />
+                <select>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="text" id="inp2" />
+                <input type="button" id="calculate" value="calculate" onclick="calculate();"/>
+                <input type="text" id="output" disabled>
+                 
             </form>
         </div>
         <script>
+            var in1 = ($('input1').val());
+            var in2 = ($ ('input2').val());
             function calculate() {
-                var innum = $('#num'),val();
-                var res = factorial(innum);
-               $('#res').val(res);
-           }
+                if(checkInput()) {
+                    
+                } else {
+                    
+                }
+                
+            }
+            function checkInput() {
+                if(isNaN(in1))
+                    return false;
+                if(isNaN(in2))
+                    return false;
+            }
+            
         </script>
     </body>
 </html>
