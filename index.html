@@ -6,45 +6,32 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>JSON</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     </head>
     <body>
-        <div>
-            <form>
-                <input type="text" id="inp1" />
-                <select>
-                    <option value="+">+</option>
-                    <option value="-">-</option>
-                    <option value="*">*</option>
-                    <option value="/">/</option>
-                </select>
-                <input type="text" id="inp2" />
-                <input type="button" id="calculate" value="calculate" onclick="calculate();"/>
-                <input type="text" id="output" disabled>
-                 
-            </form>
-        </div>
+        <p id="person"></p>
         <script>
-            var in1 = ($('input1').val());
-            var in2 = ($ ('input2').val());
-            function calculate() {
-                if(checkInput()) {
-                    
-                } else {
-                    
-                }
-                
+            var obj = {"name": "Turgut Uyar", "gender": "male", "profession": "poet", "most_known_poem": "Goge Bakma Duragı", "height": 170, "weight": 80};
+            $("#person").append(
+                    obj.name + "<br>" +
+                    obj.gender + "<br>" +
+                    obj.profession + "<br>" +
+                    obj.most_known_poem + "<br>" +
+                    obj.height + "<br>" +
+                    obj.weight);
+
+            var rat = calcRatio(obj.height, obj.weight);
+            $('#demo').append("height weight ratio: " +rat);
+            function calcRatio(height, weight) {
+
+
+                return height / weight;
             }
-            function checkInput() {
-                if(isNaN(in1))
-                    return false;
-                if(isNaN(in2))
-                    return false;
-            }
-            
+
         </script>
+        <div></div>
     </body>
 </html>
